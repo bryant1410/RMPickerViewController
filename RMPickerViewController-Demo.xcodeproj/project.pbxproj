@@ -26,6 +26,7 @@
 		CA33E08A1BF0D5EF003369F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA33E0891BF0D5EF003369F0 /* Assets.xcassets */; };
 		CA33E08D1BF0D5EF003369F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA33E08B1BF0D5EF003369F0 /* LaunchScreen.storyboard */; };
 		CA33E0931BF0D627003369F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33E0921BF0D627003369F0 /* ViewController.swift */; };
+		CA60977A1DC796CF008B59FD /* RMPickerViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6097791DC796CF008B59FD /* RMPickerViewControllerUITests.m */; };
 		CAB580981BF0F2FF00563752 /* RMPickerViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB580971BF0F2FF00563752 /* RMPickerViewControllerTests.m */; };
 		CABBCD2A189520D50006213F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABBCD29189520D50006213F /* Foundation.framework */; };
 		CABBCD2C189520D50006213F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABBCD2B189520D50006213F /* CoreGraphics.framework */; };
@@ -90,6 +91,13 @@
 			remoteGlobalIDString = CA2799641DC6B5910077712D;
 			remoteInfo = RMPickerViewController;
 		};
+		CA6097741DC796B5008B59FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CABBCD1E189520D50006213F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CABBCD25189520D50006213F;
+			remoteInfo = "RMPickerViewController-Demo";
+		};
 		CAB5809A1BF0F2FF00563752 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CABBCD1E189520D50006213F /* Project object */;
@@ -148,6 +156,9 @@
 		CA33E08C1BF0D5EF003369F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA33E08E1BF0D5EF003369F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA33E0921BF0D627003369F0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA60976F1DC796B5008B59FD /* RMActionController-Demo-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RMActionController-Demo-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6097731DC796B5008B59FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA6097791DC796CF008B59FD /* RMPickerViewControllerUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPickerViewControllerUITests.m; sourceTree = "<group>"; };
 		CAB580951BF0F2FF00563752 /* RMPickerViewController-Demo-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RMPickerViewController-Demo-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB580971BF0F2FF00563752 /* RMPickerViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMPickerViewControllerTests.m; sourceTree = "<group>"; };
 		CAB580991BF0F2FF00563752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -191,6 +202,13 @@
 			files = (
 				CA2799941DC6B7500077712D /* RMActionController.framework in Frameworks */,
 				CA2799951DC6B7500077712D /* RMPickerViewController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA60976C1DC796B5008B59FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +283,15 @@
 			path = "RMPickerViewController-SwiftDemo";
 			sourceTree = "<group>";
 		};
+		CA6097701DC796B5008B59FD /* RMActionController-Demo-UITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA6097791DC796CF008B59FD /* RMPickerViewControllerUITests.m */,
+				CA6097731DC796B5008B59FD /* Info.plist */,
+			);
+			path = "RMActionController-Demo-UITests";
+			sourceTree = "<group>";
+		};
 		CAB580961BF0F2FF00563752 /* RMPickerViewController-Demo-Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +318,7 @@
 				CA33E07F1BF0D5EF003369F0 /* RMPickerViewController-SwiftDemo */,
 				CAB580961BF0F2FF00563752 /* RMPickerViewController-Demo-Tests */,
 				CA2799771DC6B6770077712D /* Extern */,
+				CA6097701DC796B5008B59FD /* RMActionController-Demo-UITests */,
 				CABBCD28189520D50006213F /* Frameworks */,
 				CABBCD27189520D50006213F /* Products */,
 			);
@@ -305,6 +333,7 @@
 				CAB580951BF0F2FF00563752 /* RMPickerViewController-Demo-Tests.xctest */,
 				CA2799651DC6B5910077712D /* RMPickerViewController.framework */,
 				CA2799821DC6B6C10077712D /* RMActionController.framework */,
+				CA60976F1DC796B5008B59FD /* RMActionController-Demo-UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -439,6 +468,24 @@
 			productReference = CA33E07E1BF0D5EF003369F0 /* RMPickerViewController-SwiftDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CA60976E1DC796B5008B59FD /* RMActionController-Demo-UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6097781DC796B5008B59FD /* Build configuration list for PBXNativeTarget "RMActionController-Demo-UITests" */;
+			buildPhases = (
+				CA60976B1DC796B5008B59FD /* Sources */,
+				CA60976C1DC796B5008B59FD /* Frameworks */,
+				CA60976D1DC796B5008B59FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA6097751DC796B5008B59FD /* PBXTargetDependency */,
+			);
+			name = "RMActionController-Demo-UITests";
+			productName = "RMActionController-Demo-UITests";
+			productReference = CA60976F1DC796B5008B59FD /* RMActionController-Demo-UITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CAB580941BF0F2FF00563752 /* RMPickerViewController-Demo-Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAB5809E1BF0F2FF00563752 /* Build configuration list for PBXNativeTarget "RMPickerViewController-Demo-Tests" */;
@@ -521,6 +568,11 @@
 						CreatedOnToolsVersion = 7.1;
 						LastSwiftMigration = 0810;
 					};
+					CA60976E1DC796B5008B59FD = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CABBCD25189520D50006213F;
+					};
 					CAB580941BF0F2FF00563752 = {
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = CABBCD25189520D50006213F;
@@ -549,6 +601,7 @@
 				CA33E07D1BF0D5EF003369F0 /* RMPickerViewController-SwiftDemo */,
 				CACEDE3B1AD15C7500A49ECF /* RMPickerViewController-DemoExtension */,
 				CAB580941BF0F2FF00563752 /* RMPickerViewController-Demo-Tests */,
+				CA60976E1DC796B5008B59FD /* RMActionController-Demo-UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -575,6 +628,13 @@
 				CA33E08D1BF0D5EF003369F0 /* LaunchScreen.storyboard in Resources */,
 				CA33E08A1BF0D5EF003369F0 /* Assets.xcassets in Resources */,
 				CA33E0881BF0D5EF003369F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA60976D1DC796B5008B59FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +688,14 @@
 			files = (
 				CA33E0931BF0D627003369F0 /* ViewController.swift in Sources */,
 				CA33E0811BF0D5EF003369F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA60976B1DC796B5008B59FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA60977A1DC796CF008B59FD /* RMPickerViewControllerUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +762,11 @@
 			isa = PBXTargetDependency;
 			target = CA2799641DC6B5910077712D /* RMPickerViewController */;
 			targetProxy = CA27999C1DC6B7EE0077712D /* PBXContainerItemProxy */;
+		};
+		CA6097751DC796B5008B59FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CABBCD25189520D50006213F /* RMPickerViewController-Demo */;
+			targetProxy = CA6097741DC796B5008B59FD /* PBXContainerItemProxy */;
 		};
 		CAB5809B1BF0F2FF00563752 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -894,6 +967,43 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA6097761DC796B5008B59FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "RMActionController-Demo-UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.RMActionController-Demo-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RMPickerViewController-Demo.app/RMPickerViewController-Demo";
+			};
+			name = Debug;
+		};
+		CA6097771DC796B5008B59FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "RMActionController-Demo-UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.cooperrs.RMActionController-Demo-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RMPickerViewController-Demo.app/RMPickerViewController-Demo";
 			};
 			name = Release;
 		};
@@ -1112,6 +1222,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CA6097781DC796B5008B59FD /* Build configuration list for PBXNativeTarget "RMActionController-Demo-UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6097761DC796B5008B59FD /* Debug */,
+				CA6097771DC796B5008B59FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		CAB5809E1BF0F2FF00563752 /* Build configuration list for PBXNativeTarget "RMPickerViewController-Demo-Tests" */ = {
 			isa = XCConfigurationList;
